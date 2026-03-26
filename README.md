@@ -16,7 +16,7 @@
 ```python
 yajat = {
     "name":        "Yajat Kataria",
-    "reg_no":      "25BCE10291",
+    "reg_no":      "25BCE10191",
     "college":     "VIT Bhopal University",
     "degree":      "B.Tech CSE (2025–2029)",
     "based_in":    "Indore, India 🇮🇳",
