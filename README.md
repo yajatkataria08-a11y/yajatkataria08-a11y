@@ -16,6 +16,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yajatkataria)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/yajatkataria)
+[![HackerRank](https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black)](https://www.hackerrank.com/profile/yajatkataria08)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yajatkataria08-a11y)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yajatkataria08@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-10B981?style=for-the-badge&logo=vercel&logoColor=white)](#)
@@ -227,6 +228,12 @@ Dataset    : Synthetic Desert · 10-class segmentation
 
 </div>
 
+<div align="center">
+
+[![HackerRank](https://img.shields.io/badge/HackerRank-@yajatkataria08-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black)](https://www.hackerrank.com/profile/yajatkataria08)
+
+</div>
+
 **Focus Areas:**
 - 🔍 Binary Search on Answer
 - 🧮 Greedy Algorithms & Problem Decomposition
@@ -268,6 +275,7 @@ Dataset    : Synthetic Desert · 10-class segmentation
 | 💼 LinkedIn | [linkedin.com/in/yajatkataria](https://linkedin.com/in/yajatkataria) |
 | 🐙 GitHub | [github.com/yajatkataria08-a11y](https://github.com/yajatkataria08-a11y) |
 | 🧩 LeetCode | [leetcode.com/yajatkataria](https://leetcode.com/yajatkataria) |
+| 🟢 HackerRank | [hackerrank.com/profile/yajatkataria08](https://www.hackerrank.com/profile/yajatkataria08) |
 | 📍 Location | Indore, India |
 
 </div>
