@@ -5,7 +5,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yajatkataria)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/yajatkataria)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yajatkataria08)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yajatkataria08-a11y)
 
 </div>
 
@@ -19,7 +19,7 @@ yajat = {
     "reg_no":      "25BCE10191",
     "college":     "VIT Bhopal University",
     "degree":      "B.Tech CSE (2025–2029)",
-    "based_in":    "Indore, India 🇮🇳",
+    "based_in":    "Indore, India",
     "focus":       ["Full-Stack AI/ML", "Multimodal Systems", "Hackathons"],
     "currently":   "Building Orbital Insight @ NSH 2026, IIT Delhi",
     "fun_fact":    "I ship entire AI systems in 24–48 hrs 🚀"
@@ -98,11 +98,11 @@ An AI-powered intellectual property asset registry with multimodal semantic sear
 
 <div align="center">
 
-![Yajat's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yajatkataria08&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+![Yajat's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yajatkataria08-a11y&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yajatkataria08&layout=compact&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yajatkataria08-a11y&layout=compact&theme=tokyonight&hide_border=true)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=yajatkataria08&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://streak-stats.demolab.com?user=yajatkataria08-a11y&theme=tokyonight&hide_border=true)
 
 </div>
 
@@ -127,7 +127,7 @@ An AI-powered intellectual property asset registry with multimodal semantic sear
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=yajatkataria08&color=10b981&style=flat-square" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=yajatkataria08-a11y&color=10b981&style=flat-square" alt="Profile Views" />
   
   *"Ship fast, iterate faster."*
 </div>
