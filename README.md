@@ -141,18 +141,6 @@ A multimodal intellectual-property defense registry for the **AI for Bharat** ha
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-## 🏅 Hackathon Trail
-
-<img src="./assets/timeline.svg" alt="Hackathon timeline" width="100%"/>
-
-| 🏆 Event | 💡 Project | 🛠️ Stack | 📌 Status |
-|---|---|---|---|
-| NSH 2026 · IIT Delhi | Orbital Insight | FastAPI · XGBoost · Docker | 🔥 In progress |
-| AI for Bharat | Trinetra V5.0 | CLIP · FAISS · AWS | ✅ Shipped & live |
-| Startathon 2026 · E-Cell VIT Bhopal | DINOv2 Terrain Segmentation | PyTorch · Streamlit | ✅ Shipped |
-
-<img src="./assets/divider.svg" width="100%" alt=""/>
-
 ## 📊 GitHub Activity
 
 <div align="center">
