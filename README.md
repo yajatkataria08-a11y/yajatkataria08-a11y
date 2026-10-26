@@ -1,224 +1,178 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1628,100:10B981&height=200&section=header&text=Yajat%20Kataria&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20AI%2FML%20Developer%20%7C%20Hackathon%20Builder%20%7C%20CP%20Enthusiast&descAlignY=58&descSize=18" />
+<img src="./assets/banner.svg" alt="Yajat Kataria — Full-Stack AI/ML Developer" width="100%"/>
 
-</div>
-
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Hey+there!+I'm+Yajat+Kataria+👋;Full-Stack+AI%2FML+Developer+🤖;Hackathon+Grinder+🏆;Competitive+Programmer+💻;Shipping+AI+systems+in+24-48hrs+🚀)](https://git.io/typing-svg)
-
-</div>
-
----
-
-<div align="center">
+<br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yajatkataria)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/yajatkataria)
 [![HackerRank](https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black)](https://www.hackerrank.com/profile/yajatkataria08)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yajatkataria08-a11y)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yajatkataria08@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-10B981?style=for-the-badge&logo=vercel&logoColor=white)](#)
+
+![Profile Views](https://komarev.com/ghpvc/?username=yajatkataria08-a11y&color=22d3ee&style=flat-square&label=Profile+Views)
+![Followers](https://img.shields.io/github/followers/yajatkataria08-a11y?style=flat-square&color=22d3ee)
 
 </div>
 
-<div align="center">
+<img src="./assets/divider.svg" width="100%" alt=""/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=yajatkataria08-a11y&color=10b981&style=flat-square&label=Profile+Views)
-![GitHub followers](https://img.shields.io/github/followers/yajatkataria08-a11y?style=flat-square&color=10b981)
-![GitHub User's stars](https://img.shields.io/github/stars/yajatkataria08-a11y?style=flat-square&color=10b981)
+<img src="./assets/terminal.svg" alt="About me — terminal" width="100%"/>
 
-</div>
+<img src="./assets/numbers.svg" alt="By the numbers" width="100%"/>
 
----
-
-## 🧑‍💻 About Me
-
-```python
-yajat = {
-    "name":          "Yajat Kataria",
-    "reg_no":        "25BCE10291",
-    "college":       "VIT Bhopal University",
-    "degree":        "B.Tech CSE (2025–2029)",
-    "based_in":      "Indore, India",
-    "focus":         ["Full-Stack AI/ML", "Multimodal Systems", "Hackathons", "Competitive Programming"],
-    "currently":     "Building Orbital Insight @ NSH 2026, IIT Delhi",
-    "ask_me_about":  ["AI/ML", "FastAPI", "PyTorch", "Streamlit", "AWS", "Docker"],
-    "fun_fact":      "I ship entire AI systems in 24-48 hrs 🚀",
-    "motto":         "Ship fast, iterate faster. 🔥"
-}
-```
-
----
+<img src="./assets/divider.svg" width="100%" alt=""/>
 
 ## 🚀 Featured Projects
 
-### 🛰️ Orbital Insight — Satellite Fleet Management System
-> **NSH 2026 Hackathon · IIT Delhi · Team BroCODE**
+> Real-time orbital safety · satellite imagery AI · road-safety for 7 nations · smart-city command centers · multimodal IP defense.
 
-A full-stack satellite fleet management platform with real-time ML-enhanced telemetry, anomaly detection, and live orbital dashboards.
+<br/>
 
-**Key Features:**
-- 🔭 Real-time satellite telemetry monitoring with ML anomaly detection
-- 📊 Interactive orbital path visualization on HTML Canvas
-- 📈 Streamlit analytics dashboard with dark theme
-- 🐳 Fully Dockerized and deployed on Railway
-- 🔐 JWT-based authentication with PyJWT
-- ⚡ Async FastAPI backend with thread pool executors
+### 🛰️ Orbital Insight
 
-**Tech Stack:**
-```
-Backend  : Python · FastAPI · Pydantic v2 · PyJWT · SQLAlchemy
-ML       : Scikit-learn · NumPy · Pandas · Anomaly Detection
-Frontend : HTML5 Canvas · JavaScript · CSS3
-Analytics: Streamlit · Altair · Plotly
-Infra    : Docker · Railway · REST APIs
-```
+<img src="./assets/card-orbital.svg" alt="Orbital Insight" width="100%"/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-Orbital_Insight-181717?style=flat-square&logo=github)](https://github.com/yajatkataria08-a11y)
+Autonomous collision management for **55 satellites** dodging **~15,000 debris objects**: predict the risk, plan the burn, fire the thrusters. Built by Team BroCODE for **NSH 2026 at IIT Delhi**.
 
----
+<img src="./assets/arch-orbital.svg" alt="Orbital Insight system flow" width="100%"/>
 
-### 🛡️ Trinetra V5.0 — Multimodal AI IP Defense Registry
-> **"AI for Bharat" Hackathon · Live on Streamlit Cloud**
+- 🪐 **Physics:** RK4 propagation with J2 oblateness; two-burn Hohmann transfers to a graveyard orbit when fuel runs low
+- 🤖 **ML:** calibrated XGBoost collision probability (Chan formula as baseline/fallback), Thompson Sampling for burn direction, Isolation Forest for anomalous debris, quadratic RLS fuel forecasting, Kalman conjunction tracking
+- ♻️ **Self-improving:** missed predictions are logged and retrained on; a new model only replaces the old one if it scores better
+- 🌍 **UI:** live 3D globe, ground tracks, fuel heatmap, maneuver timeline + Streamlit analytics with SHAP explanations
+- 🐳 **Infra:** single Docker container (Supervisord → Nginx + FastAPI + Streamlit), deployed on Railway
 
-An AI-powered intellectual property asset registry with multimodal semantic search, duplicate detection, and Indic language support.
+[![Repo](https://img.shields.io/badge/Repo-orbital--insight-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/orbital-insight)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Railway-0B0D0E?style=for-the-badge&logo=railway)](https://orbital-insight-production.up.railway.app)
 
-**Key Features:**
-- 🖼️ CLIP-powered image similarity search with FAISS HNSW indexing
-- 🎵 CLAP audio embeddings for sound IP detection
-- 📝 Amazon Titan Embeddings V2 for text with exponential backoff
-- 🔍 AWS Rekognition for face & object detection
-- 🌐 Sarvam AI integration for 10+ Indic language translation
-- 🏗️ Refactored from 3800-line monolith into clean 10-module architecture
-- 📊 SQLite-backed metadata, analytics & search history
-- 🔁 Batch upload, result comparison & Web Peek reverse image search
+<br/>
 
-**Tech Stack:**
-```
-Embeddings : CLIP · CLAP · Amazon Titan V2
-Search     : FAISS HNSW · Semantic Similarity
-Cloud      : AWS Rekognition · AWS Bedrock · IAM
-NLP        : Sarvam AI · Indic Language Translation
-Frontend   : Streamlit · Custom Dark Mode CSS
-Database   : SQLite · SQLAlchemy
-```
+### 🌍 GEOSEG
 
-[![Live Demo](https://img.shields.io/badge/Live-Streamlit_Cloud-FF4B4B?style=flat-square&logo=streamlit)](https://streamlit.io)
-[![GitHub](https://img.shields.io/badge/GitHub-Trinetra_V5.0-181717?style=flat-square&logo=github)](https://github.com/yajatkataria08-a11y)
+<img src="./assets/card-geoseg.svg" alt="GEOSEG" width="100%"/>
 
----
+A full-stack Earth-observation platform that tackles mixed-pixel blur and coarse 10–20 m ground sampling in **Sentinel-2 L2A** imagery: it super-resolves up to **8×** and then segments land cover.
 
-### 🏜️ DINOv2 Offroad Terrain Segmentation
-> **Startathon Hackathon 2026 · E-Cell VIT Bhopal**
+<img src="./assets/arch-geoseg.svg" alt="GEOSEG pipeline" width="100%"/>
 
-10-class semantic segmentation on synthetic desert datasets using a DINOv2 backbone with advanced training techniques.
+<img src="./assets/geoseg-chart.svg" alt="PSISR vs baselines" width="100%"/>
 
-**Key Features:**
-- 🧠 DINOv2 backbone with custom segmentation head
-- 🎨 CutMix & MixUp augmentation for robustness
-- 🎯 Focal Loss for class imbalance handling
-- 📉 EMA + Cosine LR Scheduler for stable training
-- ⚡ `torch.compile` for speed optimization
-- 📊 Live Streamlit training dashboard (dark cyberpunk theme)
-- 🏆 Best Val mIoU: ~0.26 in ~13 minutes of training
+- 🔬 **PSISR:** 3-stage progressive cascade (2× → 4× → 8×) with UBCF blocks, a learnable Pearson correlation filter and PixelShuffle upscaling; adaptive MSE + SSIM loss
+- 🗺️ **Segmentation:** ResNet-34 U-Net on a 16-channel input (13 bands + NDVI/NDWI/NDBI) with distance-weighted overlap blending
+- ⚡ **Native core:** C++20 engine with AVX2 tiling and normalization, reported up to 4.8× faster than NumPy
+- 🖥️ **Viewer:** React + Vite split-view (low-res vs 8×), coordinate HUD, Google/ISRO Bhuvan/Esri/OSM basemaps, preset AOIs including Bhopal
 
-**Tech Stack:**
-```
-Model      : DINOv2 · PyTorch · torchvision
-Techniques : CutMix · MixUp · Focal Loss · EMA
-Optimizer  : AdamW · Cosine LR Scheduler
-Dashboard  : Streamlit · Plotly · Dark Theme
-Dataset    : Synthetic Desert · 10-class segmentation
-```
+[![Repo](https://img.shields.io/badge/Repo-GEOSEG-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/GEOSEG)
 
-[![GitHub](https://img.shields.io/badge/GitHub-DINOv2_Segmentation-181717?style=flat-square&logo=github)](https://github.com/yajatkataria08-a11y)
+<br/>
 
----
+### 🛣️ Road Safety AI
 
-## 🛠️ Tech Stack
+<img src="./assets/card-roadsafety.svg" alt="Road Safety AI" width="100%"/>
 
-### 👨‍💻 Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+One offline-first PWA for crash response, traffic-law compliance, civic issue reporting and authority accountability across all **7 BIMSTEC nations**.
 
-### 🤖 AI / ML / Deep Learning
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white)
+<img src="./assets/arch-roadsafety.svg" alt="Road Safety AI cascade" width="100%"/>
 
-### 🌐 Backend & APIs
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
+- 🚑 **RoadSoS CrashMode:** one-tap 60-minute "Golden Hour" countdown, offline first-aid, 112/108/100 dialing, trauma-centre navigation, multi-channel alerts (SMS, WhatsApp, email, webhooks)
+- ⚖️ **DriveLegal AI:** 154 verified violations, fines by vehicle type, repeat-offence penalties, Motor Vehicles Act citations, Hinglish support
+- 🔥 **RoadWatch:** severity-weighted Leaflet heatmap, GPS-tagged reports, upvoting, SLA breach alerts
+- 📄 **Challan OCR:** client-side Tesseract.js + server-side pytesseract
+- 🧠 **Cascade:** keyword classifier → BiLSTM NER → FAISS RAG work offline; below a 0.65 confidence threshold it escalates to Gemini Flash, with Groq Llama-3.1-70B as fallback
 
-### ☁️ Cloud & DevOps
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+[![Repo](https://img.shields.io/badge/Repo-Roadsafety--AI-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/Roadsafety-AI)
 
-### 🔧 Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+<br/>
 
----
+### 🏙️ NagarSetu V2.0
 
-## 📊 GitHub Stats
+<img src="./assets/card-nagarsetu.svg" alt="NagarSetu V2.0" width="100%"/>
 
-<div align="center">
+A smart-city civic intelligence platform for Bhopal and Indore: citizens get a multi-module Android super-app, and responders get a live **command center** with an SOS queue, tactical map and incident triage.
 
-<img src="https://github-readme-stats.vercel.app/api?username=yajatkataria08-a11y&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yajatkataria08-a11y&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="49%" />
+<img src="./assets/arch-nagarsetu.svg" alt="NagarSetu system map" width="100%"/>
 
-</div>
+- 📱 **Android:** Kotlin + Jetpack Compose, 12+ feature modules, plus the Raksha safety module
+- 🖥️ **Command Center:** Next.js 15 + TypeScript + Tailwind, three-panel layout (SOS queue · map · triage), runs on mock data without a backend
+- 🔌 **Realtime:** Node.js / Express / Socket.IO event stream
+- 🧠 **ai_engine:** Python FastAPI + scikit-learn service, built in phases on a 15-phase roadmap
 
-<div align="center">
+[![Repo](https://img.shields.io/badge/Repo-NagarsetuV2.0-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/NagarsetuV2.0)
 
-<img src="https://streak-stats.demolab.com?user=yajatkataria08-a11y&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" width="60%" />
+<br/>
 
-</div>
+### 🛡️ Trinetra V5.0
 
-<div align="center">
+<img src="./assets/card-trinetra.svg" alt="Trinetra V5.0" width="100%"/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=yajatkataria08-a11y&theme=tokyo-night&hide_border=true&area=true" width="100%" />
+A multimodal intellectual-property defense registry for the **AI for Bharat** hackathon: register an asset once, then catch duplicates and infringements across images, audio and text.
 
-</div>
+<img src="./assets/arch-trinetra.svg" alt="Trinetra architecture" width="100%"/>
 
----
+- 🖼️ CLIP image similarity and CLAP audio embeddings behind a FAISS HNSW index
+- 📝 Amazon Titan Embeddings V2 for text, AWS Rekognition for faces and objects, reverse image "Web Peek"
+- 🌐 Sarvam AI for 10+ Indic languages
+- 🏗️ Refactored from a 3,800-line monolith into a 10-module architecture
 
-## 🏆 GitHub Trophies
+[![Repo](https://img.shields.io/badge/Repo-Trinetra__AI-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/Trinetra_AI)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://trinetra-ai-team-human.streamlit.app)
 
-<div align="center">
+<img src="./assets/divider.svg" width="100%" alt=""/>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=yajatkataria08-a11y&theme=tokyonight&no-frame=true&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+## 🧰 More Builds
 
-</div>
+| Project | What it is | Stack |
+|---|---|---|
+| 🏜️ **DINOv2 Terrain Segmentation** | 10-class offroad segmentation, Startathon 2026 (E-Cell VIT Bhopal) | PyTorch · DINOv2 · CutMix/MixUp · Focal Loss · EMA |
+| 🚖 **RideFlex** | Corporate/SEZ employee ride-hailing with C++ matching engine, ladies-only matching and SOS | FastAPI · Next.js · React Native · C++ (pybind11) |
+| 🎓 **ElevateAI** | AI-powered student OS: Student DNA, TrustScore Network, CampusOS | Flutter · Supabase |
+| 🧮 **SciCalc** | Scientific calculator with C++/WASM core and Material You dark theme | Next.js 15 · TypeScript · C++/WASM |
+| 🎙️ [**Friday_ai**](https://github.com/yajatkataria08-a11y/Friday_ai) | Python voice assistant inspired by Marvel's FRIDAY | Python |
 
----
+<img src="./assets/divider.svg" width="100%" alt=""/>
 
-## 🏅 Hackathons & Achievements
+## ⚙️ How I Ship
+
+<img src="./assets/pipeline.svg" alt="24–48 hour build loop" width="100%"/>
+
+## 🌌 Tech Constellation
+
+<img src="./assets/tech-orbit.svg" alt="Tech stack orbit" width="100%"/>
+
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+## 🏅 Hackathon Trail
+
+<img src="./assets/timeline.svg" alt="Hackathon timeline" width="100%"/>
 
 | 🏆 Event | 💡 Project | 🛠️ Stack | 📌 Status |
-|----------|-----------|----------|----------|
-| NSH 2026 · IIT Delhi | Orbital Insight | FastAPI · ML · Docker | 🔥 In Progress |
-| AI for Bharat Hackathon | Trinetra V5.0 | CLIP · FAISS · AWS | ✅ Shipped & Live |
+|---|---|---|---|
+| NSH 2026 · IIT Delhi | Orbital Insight | FastAPI · XGBoost · Docker | 🔥 In progress |
+| AI for Bharat | Trinetra V5.0 | CLIP · FAISS · AWS | ✅ Shipped & live |
 | Startathon 2026 · E-Cell VIT Bhopal | DINOv2 Terrain Segmentation | PyTorch · Streamlit | ✅ Shipped |
 
----
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+## 📊 GitHub Activity
+
+<div align="center">
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=yajatkataria08-a11y&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yajatkataria08-a11y&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages"/>
+
+<img src="https://streak-stats.demolab.com?user=yajatkataria08-a11y&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="Streak"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=yajatkataria08-a11y&theme=tokyo-night&hide_border=true&area=true" alt="Activity graph" width="100%"/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yajatkataria08-a11y/yajatkataria08-a11y/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yajatkataria08-a11y/yajatkataria08-a11y/output/github-snake.svg"/>
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/yajatkataria08-a11y/yajatkataria08-a11y/output/github-snake.svg" width="100%"/>
+</picture>
+
+<img src="https://github-profile-trophy.vercel.app/?username=yajatkataria08-a11y&theme=tokyonight&no-frame=true&row=1&column=7" alt="Trophies"/>
+
+</div>
 
 ## 💻 Competitive Programming
 
@@ -228,72 +182,30 @@ Dataset    : Synthetic Desert · 10-class segmentation
 
 </div>
 
-<div align="center">
-
-[![HackerRank](https://img.shields.io/badge/HackerRank-@yajatkataria08-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black)](https://www.hackerrank.com/profile/yajatkataria08)
-
-</div>
-
-**Focus Areas:**
-- 🔍 Binary Search on Answer
-- 🧮 Greedy Algorithms & Problem Decomposition
-- 🌲 Trees, Graphs & BFS/DFS
-- 🔢 Dynamic Programming
-- 📐 Two Pointers / Sliding Window
-- 📦 Stack & Queue based problems
-
----
+`Binary search on answer` · `Greedy` · `Trees & graphs (BFS/DFS)` · `Dynamic programming` · `Two pointers / sliding window` · `Stack & queue`
 
 ## 📚 Currently Learning
 
-```
-🧠  Advanced Deep Learning  —  Transformers, ViT, Diffusion Models
-⚙️  System Design          —  Scalable ML pipelines & microservices
-🔐  Cloud Security         —  AWS IAM, VPCs, Security Groups
-🏎️  Competitive Programming —  Codeforces Div 2/3 problems
-🌐  Web3 Fundamentals      —  Smart contracts & dApps
-```
-
----
+| | Focus | Topics |
+|---|---|---|
+| 🧠 | **Advanced Deep Learning** | Transformers, ViT, Diffusion Models |
+| ⚙️ | **System Design** | Scalable ML pipelines & microservices |
+| 🔐 | **Cloud Security** | AWS IAM, VPCs, Security Groups |
+| 🏎️ | **Competitive Programming** | Codeforces Div 2/3 |
+| 🌐 | **Web3 Fundamentals** | Smart contracts & dApps |
 
 ## 🤝 Open To
 
-- 🤝 **Hackathon collabs** — especially AI/ML and systems tracks
-- 💼 **Internship opportunities** — AI/ML, Full-Stack, Backend Engineering
-- 🔬 **Research projects** — Computer Vision, NLP, Multimodal AI
-- 🌟 **Open source contributions** — Python, ML tooling, FastAPI
-
----
+🤝 **Hackathon collabs** (AI/ML, systems) · 💼 **Internships** (AI/ML, full-stack, backend) · 🔬 **Research** (computer vision, NLP, multimodal) · 🌟 **Open source** (Python, ML tooling, FastAPI)
 
 ## 📫 Let's Connect
 
-<div align="center">
-
 | Platform | Link |
-|----------|------|
-| 📧 Email | yajatkataria08@gmail.com |
+|---|---|
+| 📧 Email | [yajatkataria08@gmail.com](mailto:yajatkataria08@gmail.com) |
 | 💼 LinkedIn | [linkedin.com/in/yajatkataria](https://linkedin.com/in/yajatkataria) |
-| 🐙 GitHub | [github.com/yajatkataria08-a11y](https://github.com/yajatkataria08-a11y) |
 | 🧩 LeetCode | [leetcode.com/yajatkataria](https://leetcode.com/yajatkataria) |
 | 🟢 HackerRank | [hackerrank.com/profile/yajatkataria08](https://www.hackerrank.com/profile/yajatkataria08) |
 | 📍 Location | Indore, India |
 
-</div>
-
----
-
-## 💬 Random Dev Quote
-
-<div align="center">
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:10B981,100:0A1628&height=120&section=footer&text=Ship+Fast%2C+Iterate+Faster+🚀&fontSize=24&fontColor=ffffff&fontAlignY=65" />
-
-</div>
+<img src="./assets/footer.svg" alt="Ship fast, iterate faster." width="100%"/>
