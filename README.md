@@ -27,6 +27,35 @@
 > Real-time orbital safety · satellite imagery AI · road-safety for 7 nations · smart-city command centers · multimodal IP defense.
 
 <br/>
+### ✈️ Turbozone (GENZONE) — Turbofan Digital Twin
+
+> **AI Manthan**
+
+A physics-informed, explainable health-monitoring system for a two-spool turbofan engine, trained on NASA N-CMAPSS. It predicts remaining useful life (RUL), estimates component health, and explains every prediction.
+
+**Key Features:**
+
+- ⏳ RUL prediction with a stacking ensemble (Random Forest, XGBoost, LightGBM, CatBoost → Ridge) and empirical intervals
+- 🧪 Physics layer: healthy-condition baseline and pressure-ratio/efficiency proxies from measured stations
+- 📡 Extended Kalman Filter for gas-path component health, with observability-based state selection
+- 🔧 Component-level RUL and 10/25/50-flight health forecasts, marked useful only when they beat baselines
+- 🔍 Explainability via SHAP, Ridge contributions, per-sensor occlusion, and EKF diagnostics
+- 🖥️ FastAPI backend with a live dashboard: fleet queue, RUL, gas-path health, maintenance log
+- ☁️ Colab training notebook that shares its pipeline code with the backend (parity check included)
+
+**Tech Stack:**
+
+```
+Backend  : Python · FastAPI
+ML       : XGBoost · LightGBM · CatBoost · Random Forest · Ridge · SHAP
+Physics  : Extended Kalman Filter · Gas-path modelling
+Data     : NASA N-CMAPSS · HDF5 · Google Colab
+Frontend : HTML5 · JavaScript · CSS3
+```
+
+[![GitHub](https://img.shields.io/badge/GitHub-Turbozone-181717?style=flat-square&logo=github)](https://github.com/yajatkataria08-a11y/Turbozone)
+
+---
 
 ### 🛰️ Orbital Insight
 
