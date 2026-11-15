@@ -1,4 +1,4 @@
-<div align="center">
+[<div align="center">
 
 <img src="./assets/banner.svg" alt="Yajat Kataria — Full-Stack AI/ML Developer" width="100%"/>
 
@@ -226,3 +226,4 @@ A multimodal intellectual-property defense registry for the **AI for Bharat** ha
 | 📍 Location | Indore, India |
 
 <img src="./assets/footer.svg" alt="Ship fast, iterate faster." width="100%"/>
+](https://github.com/yajatkataria08-a11y/Turbozone)
