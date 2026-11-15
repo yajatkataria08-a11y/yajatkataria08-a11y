@@ -1,4 +1,4 @@
-[<div align="center">
+<div align="center">
 
 <img src="./assets/banner.svg" alt="Yajat Kataria — Full-Stack AI/ML Developer" width="100%"/>
 
@@ -24,26 +24,25 @@
 
 ## 🚀 Featured Projects
 
-> Real-time orbital safety · satellite imagery AI · road-safety for 7 nations · smart-city command centers · multimodal IP defense.
+> Turbofan digital twin · real-time orbital safety · satellite imagery AI · road-safety for 7 nations · smart-city command centers · multimodal IP defense.
 
 <br/>
-### ✈️ Turbozone (GENZONE) — Turbofan Digital Twin
 
-> **AI Manthan**
+### ✈️ Turbozone (GENZONE)
 
-A physics-informed, explainable health-monitoring system for a two-spool turbofan engine, trained on NASA N-CMAPSS. It predicts remaining useful life (RUL), estimates component health, and explains every prediction.
+<img src="./assets/card-turbozone.svg" alt="Turbozone" width="100%"/>
 
-**Key Features:**
+A physics-informed, **explainable digital twin** of a two-spool turbofan engine, built for **AI Manthan**. Trained on **NASA N-CMAPSS**, it predicts remaining useful life, tracks component health, and shows *why* behind every prediction.
 
-- ⏳ RUL prediction with a stacking ensemble (Random Forest, XGBoost, LightGBM, CatBoost → Ridge) and empirical intervals
-- 🧪 Physics layer: healthy-condition baseline and pressure-ratio/efficiency proxies from measured stations
-- 📡 Extended Kalman Filter for gas-path component health, with observability-based state selection
-- 🔧 Component-level RUL and 10/25/50-flight health forecasts, marked useful only when they beat baselines
-- 🔍 Explainability via SHAP, Ridge contributions, per-sensor occlusion, and EKF diagnostics
-- 🖥️ FastAPI backend with a live dashboard: fleet queue, RUL, gas-path health, maintenance log
-- ☁️ Colab training notebook that shares its pipeline code with the backend (parity check included)
+<img src="./assets/arch-turbozone.svg" alt="Turbozone pipeline" width="100%"/>
 
-**Tech Stack:**
+- ⏳ **RUL:** stacking ensemble of Random Forest, XGBoost, LightGBM and CatBoost into a Ridge meta-learner, with empirical prediction intervals
+- 🧪 **Physics layer:** healthy-condition baseline plus pressure-ratio and efficiency proxies derived from measured stations
+- 📡 **Gas-path health:** Extended Kalman Filter with observability-based state selection, so only identifiable components are estimated
+- 🔧 **Component forecasts:** per-component RUL and 10/25/50-flight health forecasts, shown only when they beat baselines
+- 🔍 **Explainability:** SHAP, Ridge contributions, per-sensor occlusion and EKF diagnostics
+- 🖥️ **Dashboard:** FastAPI backend with a live UI: fleet queue, RUL, gas-path health and maintenance log
+- ☁️ **Reproducible:** Colab notebook shares its pipeline code with the backend, with a parity check between the two
 
 ```
 Backend  : Python · FastAPI
@@ -53,9 +52,9 @@ Data     : NASA N-CMAPSS · HDF5 · Google Colab
 Frontend : HTML5 · JavaScript · CSS3
 ```
 
-[![GitHub](https://img.shields.io/badge/GitHub-Turbozone-181717?style=flat-square&logo=github)](https://github.com/yajatkataria08-a11y/Turbozone)
+[![Repo](https://img.shields.io/badge/Repo-Turbozone-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/Turbozone)
 
----
+<br/>
 
 ### 🛰️ Orbital Insight
 
@@ -226,4 +225,3 @@ A multimodal intellectual-property defense registry for the **AI for Bharat** ha
 | 📍 Location | Indore, India |
 
 <img src="./assets/footer.svg" alt="Ship fast, iterate faster." width="100%"/>
-](https://github.com/yajatkataria08-a11y/Turbozone)
