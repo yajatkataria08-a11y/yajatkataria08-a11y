@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050714"/>
+      <stop offset="50%" stop-color="#0a0f28"/>
+      <stop offset="100%" stop-color="#040610"/>
+    </linearGradient>
+
+    <!-- Node Gradient 1: Ingestion -->
+    <linearGradient id="nodeIngest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Node Gradient 2: Neural -->
+    <linearGradient id="nodeNeural" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e1065"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Node Gradient 3: Physics -->
+    <linearGradient id="nodePhysics" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Node Gradient 4: Scoring -->
+    <linearGradient id="nodeScoring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 120; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseCard {
+      0%, 100% { stroke-opacity: 0.4; }
+      50% { stroke-opacity: 1; }
+    }
+    @keyframes nodeBeacon {
+      0% { r: 3; opacity: 1; }
+      100% { r: 16; opacity: 0; }
+    }
+    @keyframes packetMoveX {
+      0% { transform: translateX(0px); opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { transform: translateX(180px); opacity: 0; }
+    }
+
+    .data-wire { stroke-dasharray: 6 6; animation: flowLine 2s linear infinite; }
+    .pulse-border-cyan { animation: pulseCard 3s ease-in-out infinite; }
+    .pulse-border-purple { animation: pulseCard 3.5s ease-in-out infinite 0.5s; }
+    .pulse-border-green { animation: pulseCard 3.2s ease-in-out infinite 1s; }
+    .beacon { animation: nodeBeacon 2s cubic-bezier(0.1, 0.8, 0.3, 1) infinite; }
+  </style>
+
+  <!-- Canvas Backdrop -->
+  <rect width="1200" height="480" rx="16" fill="url(#pipeBg)"/>
+
+  <!-- Matrix Background Grid -->
+  <g opacity="0.1" stroke="#38bdf8" stroke-width="0.5">
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="160" x2="1200" y2="160"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="320" x2="1200" y2="320"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="480"/>
+    <line x1="400" y1="0" x2="400" y2="480"/>
+    <line x1="600" y1="0" x2="600" y2="480"/>
+    <line x1="800" y1="0" x2="800" y2="480"/>
+    <line x1="1000" y1="0" x2="1000" y2="480"/>
+  </g>
+
+  <!-- Header Banner Section -->
+  <g transform="translate(50, 40)">
+    <text x="0" y="0" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" letter-spacing="2">
+      // SYSTEM ARCHITECTURE &amp; DATA INVERSION PIPELINE
+    </text>
+    <text x="0" y="20" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="13">
+      End-to-end data flow: ISRO multi-mission orbital archives to geomechanically rated lunar habitat sites
+    </text>
+  </g>
+
+  <!-- PIPELINE STAGE 1: SENSORS (Left) -->
+  <g transform="translate(50, 95)">
+    <!-- Stage Box -->
+    <rect x="0" y="0" width="185" height="340" rx="10" fill="url(#nodeIngest)" stroke="#6366f1" stroke-width="1.2" class="pulse-border-purple"/>
+    <text x="14" y="28" fill="#a5b4fc" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="1">1. ISRO SENSORS</text>
+    <line x1="14" y1="38" x2="171" y2="38" stroke="#4338ca" stroke-width="0.8"/>
+
+    <!-- Sensor 1: OHRC -->
+    <g transform="translate(12, 50)">
+      <rect x="0" y="0" width="161" height="50" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="0.8"/>
+      <circle cx="14" cy="18" r="4" fill="#38bdf8"/>
+      <text x="24" y="21" fill="#e0e7ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">CH-2 OHRC</text>
+      <text x="14" y="38" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="8.5">0.25m High-Res Optical</text>
+    </g>
+
+    <!-- Sensor 2: DFSAR -->
+    <g transform="translate(12, 108)">
+      <rect x="0" y="0" width="161" height="50" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="0.8"/>
+      <circle cx="14" cy="18" r="4" fill="#818cf8"/>
+      <text x="24" y="21" fill="#e0e7ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">CH-2 DFSAR</text>
+      <text x="14" y="38" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="8.5">L &amp; S-Band Radar (24cm)</text>
+    </g>
+
+    <!-- Sensor 3: TMC-2 -->
+    <g transform="translate(12, 166)">
+      <rect x="0" y="0" width="161" height="50" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="0.8"/>
+      <circle cx="14" cy="18" r="4" fill="#fbbf24"/>
+      <text x="24" y="21" fill="#e0e7ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">CH-2 TMC-2</text>
+      <text x="14" y="38" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="8.5">5.0m Stereo Topo (DEM)</text>
+    </g>
+
+    <!-- Sensor 4: ChaSTE -->
+    <g transform="translate(12, 224)">
+      <rect x="0" y="0" width="161" height="50" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="0.8"/>
+      <circle cx="14" cy="18" r="4" fill="#f43f5e"/>
+      <text x="24" y="21" fill="#e0e7ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">CH-3 ChaSTE</text>
+      <text x="14" y="38" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="8.5">In-Situ Regolith Thermal</text>
+    </g>
+
+    <!-- Sensor 5: MOSDAC -->
+    <g transform="translate(12, 282)">
+      <rect x="0" y="0" width="161" height="46" rx="6" fill="#1e1b4b" stroke="#818cf8" stroke-width="0.8"/>
+      <circle cx="14" cy="16" r="4" fill="#10b981"/>
+      <text x="24" y="19" fill="#e0e7ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">MOSDAC ANALOGS</text>
+      <text x="14" y="34" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="8.5">Deccan &amp; Lonar Traps</text>
+    </g>
+  </g>
+
+  <!-- CONNECTING DATA CONDUITS (Stage 1 -> Stage 2) -->
+  <path d="M 235 170 L 290 170" fill="none" stroke="#6366f1" stroke-width="2" class="data-wire"/>
+  <path d="M 235 228 L 290 228" fill="none" stroke="#38bdf8" stroke-width="2" class="data-wire"/>
+  <path d="M 235 286 L 290 286" fill="none" stroke="#fbbf24" stroke-width="2" class="data-wire"/>
+
+  <!-- PIPELINE STAGE 2: NEURAL NETWORK & MMD (Mid-Left) -->
+  <g transform="translate(290, 95)">
+    <rect x="0" y="0" width="225" height="340" rx="10" fill="url(#nodeNeural)" stroke="#a855f7" stroke-width="1.2" class="pulse-border-purple"/>
+    <text x="14" y="28" fill="#d8b4fe" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="1">2. NEURAL VISION &amp; MMD</text>
+    <line x1="14" y1="38" x2="211" y2="38" stroke="#7e22ce" stroke-width="0.8"/>
+
+    <!-- Module 1: AttentionUNet -->
+    <g transform="translate(12, 54)">
+      <rect x="0" y="0" width="201" height="74" rx="6" fill="#3b0764" stroke="#c084fc" stroke-width="0.8"/>
+      <text x="12" y="22" fill="#f5d0fe" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">Attention U-Net</text>
+      <text x="12" y="40" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="9">Spatial Attention Skip-Gates</text>
+      <text x="12" y="55" fill="#a855f7" font-family="'Space Grotesk', sans-serif" font-size="8.5">Compound Focal Dice Loss</text>
+      <rect x="128" y="10" width="62" height="18" rx="4" fill="#581c87"/>
+      <text x="159" y="22" fill="#e9d5ff" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" text-anchor="middle">SEGMENT</text>
+    </g>
+
+    <!-- Module 2: MMD Transfer Learner -->
+    <g transform="translate(12, 142)">
+      <rect x="0" y="0" width="201" height="78" rx="6" fill="#3b0764" stroke="#c084fc" stroke-width="0.8"/>
+      <text x="12" y="22" fill="#f5d0fe" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">MMD Domain Align</text>
+      <text x="12" y="40" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="9">Maximum Mean Discrepancy</text>
+      <text x="12" y="55" fill="#e879f9" font-family="'Space Grotesk', sans-serif" font-size="8.5">Deccan Basalt → Lunar Mare</text>
+      <rect x="136" y="10" width="54" height="18" rx="4" fill="#581c87"/>
+      <text x="163" y="22" fill="#f0abfc" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" text-anchor="middle">ADAPT</text>
+    </g>
+
+    <!-- Module 3: Adversarial False Positive Suppressor -->
+    <g transform="translate(12, 234)">
+      <rect x="0" y="0" width="201" height="88" rx="6" fill="#3b0764" stroke="#ef4444" stroke-width="1.0"/>
+      <text x="12" y="22" fill="#fca5a5" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">Hard-Negative Discrim</text>
+      <text x="12" y="40" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="9">Impact Crater Shadow Filter</text>
+      <text x="12" y="57" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">FP: 15.3 → 7.8 / km²</text>
+      <text x="12" y="74" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">Precision: 83.4% → 91.8%</text>
+    </g>
+  </g>
+
+  <!-- CONNECTING DATA CONDUITS (Stage 2 -> Stage 3) -->
+  <path d="M 515 170 L 565 170" fill="none" stroke="#a855f7" stroke-width="2" class="data-wire"/>
+  <path d="M 515 265 L 565 265" fill="none" stroke="#22c55e" stroke-width="2" class="data-wire"/>
+
+  <!-- PIPELINE STAGE 3: GEOMECHANICS & PHYSICS INVERSION (Center) -->
+  <g transform="translate(565, 95)">
+    <rect x="0" y="0" width="225" height="340" rx="10" fill="url(#nodePhysics)" stroke="#10b981" stroke-width="1.2" class="pulse-border-green"/>
+    <text x="14" y="28" fill="#6ee7b7" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="1">3. PHYSICS INVERSION</text>
+    <line x1="14" y1="38" x2="211" y2="38" stroke="#047857" stroke-width="0.8"/>
+
+    <!-- Physics 1: DFSAR m-chi -->
+    <g transform="translate(12, 54)">
+      <rect x="0" y="0" width="201" height="74" rx="6" fill="#064e3b" stroke="#34d399" stroke-width="0.8"/>
+      <text x="12" y="22" fill="#a7f3d0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">DFSAR m-χ Decomp</text>
+      <text x="12" y="40" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="9">Stokes Double-Bounce Echo</text>
+      <text x="12" y="55" fill="#38bdf8" font-family="'Space Grotesk', sans-serif" font-size="8.5">Right-angle wall-to-floor ping</text>
+      <circle cx="180" cy="18" r="4" fill="#34d399" filter="url(#glowGreen)"/>
+    </g>
+
+    <!-- Physics 2: ChaSTE Thermal Decay -->
+    <g transform="translate(12, 142)">
+      <rect x="0" y="0" width="201" height="78" rx="6" fill="#064e3b" stroke="#34d399" stroke-width="0.8"/>
+      <text x="12" y="22" fill="#a7f3d0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">ChaSTE Heat Decay</text>
+      <text x="12" y="40" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="9">Stefan-Boltzmann Radiation</text>
+      <text x="12" y="57" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">k ≈ 0.002 W/m·K (RTD)</text>
+      <text x="12" y="72" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="8.5">–20°C Subsurface Stability</text>
+    </g>
+
+    <!-- Physics 3: Geomechanical FoS -->
+    <g transform="translate(12, 234)">
+      <rect x="0" y="0" width="201" height="88" rx="6" fill="#064e3b" stroke="#34d399" stroke-width="0.8"/>
+      <text x="12" y="22" fill="#a7f3d0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">Geomechanical FoS</text>
+      <text x="12" y="40" fill="#cbd5e1" font-family="'Space Grotesk', sans-serif" font-size="9">Basalt Tensile Arch Bending</text>
+      <text x="12" y="57" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">FoS &gt; 5.0 (Nominally Stable)</text>
+      <text x="12" y="74" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="8.5">UCS ≈ 180 MPa Basalt Roof</text>
+    </g>
+  </g>
+
+  <!-- CONNECTING DATA CONDUITS (Stage 3 -> Stage 4) -->
+  <path d="M 790 170 L 840 170" fill="none" stroke="#10b981" stroke-width="2" class="data-wire"/>
+  <path d="M 790 265 L 840 265" fill="none" stroke="#38bdf8" stroke-width="2" class="data-wire"/>
+
+  <!-- PIPELINE STAGE 4: ISRO LHI SCORING ENGINE (Right) -->
+  <g transform="translate(840, 95)">
+    <rect x="0" y="0" width="310" height="340" rx="10" fill="url(#nodeScoring)" stroke="#0ea5e9" stroke-width="1.5" class="pulse-border-cyan"/>
+    <text x="16" y="28" fill="#7dd3fc" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="1">4. ISRO LHI SCORING &amp; MAPPER</text>
+    <line x1="16" y1="38" x2="294" y2="38" stroke="#0284c7" stroke-width="0.8"/>
+
+    <!-- Composite Weights Box -->
+    <g transform="translate(14, 52)">
+      <rect x="0" y="0" width="282" height="105" rx="6" fill="#082f49" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="12" y="20" fill="#bae6fd" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">LHI Composite Formulation:</text>
+      <text x="12" y="42" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9.5">0.30·OHRC + 0.25·DFSAR</text>
+      <text x="12" y="58" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9.5">+ 0.20·FoS  + 0.15·TMC2 + 0.10·ChaSTE</text>
+      <line x1="12" y1="68" x2="270" y2="68" stroke="#0369a1" stroke-width="0.6"/>
+      <text x="12" y="85" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">95% Epistemic Credible Intervals</text>
+      <text x="12" y="98" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="8.5">Gate 2 Safeguard: Impact Landmark Exclusion</text>
+    </g>
+
+    <!-- Top Ranked Result Callout -->
+    <g transform="translate(14, 168)">
+      <rect x="0" y="0" width="282" height="74" rx="6" fill="#0c4a6e" stroke="#22c55e" stroke-width="1.2" filter="url(#glowGreen)"/>
+      <text x="12" y="22" fill="#86efac" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">🥇 #1 MARIUS HILLS HOLE</text>
+      <text x="12" y="42" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="900">95.6 <tspan font-size="10" fill="#86efac">/ 100 LHI</tspan></text>
+      <text x="12" y="60" fill="#bae6fd" font-family="'Space Grotesk', sans-serif" font-size="9">Oceanus Procellarum · CI [93.4 - 97.6]</text>
+      <rect x="210" y="12" width="60" height="20" rx="4" fill="#14532d"/>
+      <text x="240" y="26" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="middle">TIER 1</text>
+    </g>
+
+    <!-- Output Web Delivery -->
+    <g transform="translate(14, 252)">
+      <rect x="0" y="0" width="282" height="72" rx="6" fill="#082f49" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="12" y="20" fill="#e0f2fe" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">Next.js 15 + Three.js Atlas</text>
+      <text x="12" y="38" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="8.5">60 FPS 3D Orbiting Globe · SHAP Waterfall</text>
+      <text x="12" y="55" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="8.5">Zero-Token Auth · Open Source Vault</text>
+    </g>
+  </g>
+
+  <!-- Animated Data Packets (Pulsing circles traveling along paths) -->
+  <circle cx="262" cy="170" r="3" fill="#38bdf8" filter="url(#glowCyan)">
+    <animate attributeName="cx" values="235;290;235" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="540" cy="170" r="3" fill="#a855f7" filter="url(#glowCyan)">
+    <animate attributeName="cx" values="515;565;515" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="815" cy="170" r="3" fill="#10b981" filter="url(#glowGreen)">
+    <animate attributeName="cx" values="790;840;790" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>
