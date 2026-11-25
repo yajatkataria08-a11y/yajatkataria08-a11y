@@ -30,11 +30,13 @@
 
 ### 🌕 LUNARIS — Lunar Lava Tube Subsurface Habitat & Stability Mapper
 
-[![Repo](https://img.shields.io/badge/Repo-LUNARIS-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/LUNARIS)
+<img src="./assets/card-lunaris.svg" alt="LUNARIS — Lunar Lava Tube Subsurface Habitat & Stability Mapper" width="100%"/>
 
 A **peer-reviewed planetary AI system** that identifies, ranks, and architecturally models the best candidate lunar lava tube skylights for long-duration human habitation — focused on the **Marius Hills Hole** (Oceanus Procellarum, 14.08°N, 303.20°E).
 
 Integrates ISRO Chandrayaan-2 multi-sensor data (OHRC, DFSAR, TMC-2, ChaSTE) through a 5-stage ML pipeline to produce a calibrated **Lunar Habitat Index (LHI)** score per candidate site.
+
+<img src="./assets/arch-lunaris.svg" alt="LUNARIS architecture" width="100%"/>
 
 - 🛰️ **Multi-Sensor Fusion:** OHRC 25cm orthophotos, DFSAR 24cm L-Band quad-pol SAR (m-chi decomposition, double-bounce), TMC-2 DTM terrain, ChaSTE subsurface thermal profiles
 - 🧠 **Attention U-Net + Stacking Ensemble:** Semantic skylight segmentation → feature extraction → XGBoost / LightGBM / RandomForest Ridge meta-learner for final LHI scoring
@@ -50,6 +52,8 @@ Physics  : DFSAR m-chi · ChaSTE thermal · Mohr-Coulomb FoS · MMD Domain Adapt
 Data     : ISRO Chandrayaan-2 (OHRC / DFSAR / TMC-2 / ChaSTE) · NASA LROC/LOLA 2K albedo
 Frontend : Next.js 15 · React 19 · TypeScript · TailwindCSS · Three.js · D3.js · Plotly.js
 ```
+
+[![Repo](https://img.shields.io/badge/Repo-LUNARIS-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/LUNARIS)
 
 <br/>
 
