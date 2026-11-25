@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" width="900" height="150" font-family="Segoe UI,Ubuntu,Helvetica Neue,Arial,sans-serif">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#121c3d"/></linearGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity="0.04"/></pattern>
+  <radialGradient id="orb" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fbbf24" stop-opacity="0.5"/><stop offset="1" stop-color="#fbbf24" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="150" rx="16" fill="url(#bg)"/>
+<rect width="900" height="150" rx="16" fill="url(#grid)"/>
+<rect x="0.5" y="0.5" width="899" height="149" rx="16" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+<circle cx="780" cy="60" r="130" fill="url(#orb)"><animate attributeName="r" values="110;148;110" dur="5s" repeatCount="indefinite"/></circle>
+<rect x="0" y="0" width="8" height="150" fill="#fbbf24"><animate attributeName="opacity" values="0.55;1;0.55" dur="2.5s" repeatCount="indefinite"/></rect>
+<text x="36" y="56" font-size="34" fill="#f8fafc" text-anchor="start" font-weight="800">ASTRÆA Citadel Observatory</text>
+<text x="36" y="86" font-size="15" fill="#94a3b8" text-anchor="start" font-weight="normal">AI exoplanet vetting, habitability physics &amp; 102-ch SPHEREx sky-change explorer</text>
+<rect x="36" y="104" width="84" height="26" rx="13" fill="#fbbf24" fill-opacity="0.1" stroke="#fbbf24" stroke-opacity="0.5"/>
+<text x="78" y="121" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="600">Next.js 15</text>
+<rect x="128" y="104" width="74" height="26" rx="13" fill="#fbbf24" fill-opacity="0.1" stroke="#fbbf24" stroke-opacity="0.5"/>
+<text x="165" y="121" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="600">FastAPI</text>
+<rect x="210" y="104" width="84" height="26" rx="13" fill="#fbbf24" fill-opacity="0.1" stroke="#fbbf24" stroke-opacity="0.5"/>
+<text x="252" y="121" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="600">LightGBM</text>
+<rect x="302" y="104" width="84" height="26" rx="13" fill="#fbbf24" fill-opacity="0.1" stroke="#fbbf24" stroke-opacity="0.5"/>
+<text x="344" y="121" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="600">TreeSHAP</text>
+<rect x="394" y="104" width="94" height="26" rx="13" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-opacity="0.5"/>
+<text x="441" y="121" font-size="11" fill="#22d3ee" text-anchor="middle" font-weight="600">D3 · Plotly</text>
+<g>
+  <rect x="722" y="24" width="150" height="28" rx="14" fill="#fbbf24" fill-opacity="0.15" stroke="#fbbf24"/>
+  <circle cx="738" cy="38" r="4" fill="#34d399"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <text x="802" y="43" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="700">ROC-AUC 0.977</text>
+</g>
+</svg>

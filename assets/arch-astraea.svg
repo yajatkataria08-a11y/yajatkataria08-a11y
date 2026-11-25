@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 560" width="1200" height="560">
+<defs>
+  <linearGradient id="archbg" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="#07101E"/>
+    <stop offset="100%" stop-color="#040812"/>
+  </linearGradient>
+  <linearGradient id="col1grad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#2D1B69" stop-opacity=".5"/>
+    <stop offset="100%" stop-color="#070F1C" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="col2grad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#0E3A5C" stop-opacity=".5"/>
+    <stop offset="100%" stop-color="#070F1C" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="col3grad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#064E3B" stop-opacity=".4"/>
+    <stop offset="100%" stop-color="#070F1C" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="col4grad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#422006" stop-opacity=".4"/>
+    <stop offset="100%" stop-color="#070F1C" stop-opacity=".3"/>
+  </linearGradient>
+  <style>
+    @keyframes nodePulse { 0%,100%{r:14;opacity:.8} 50%{r:17;opacity:1} }
+    @keyframes flowDash { from{stroke-dashoffset:60} to{stroke-dashoffset:0} }
+    @keyframes borderP { 0%,100%{opacity:.3} 50%{opacity:.7} }
+    @keyframes cardIn { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes packetMove { 0%{opacity:0} 10%{opacity:1} 90%{opacity:1} 100%{opacity:0} }
+    @keyframes colHeader { 0%,100%{opacity:.7} 50%{opacity:1} }
+  </style>
+</defs>
+
+<!-- BG -->
+<rect width="1200" height="560" fill="url(#archbg)"/>
+<rect x="1" y="1" width="1198" height="558" rx="8" fill="none" stroke="#D4AF37" stroke-width=".8" stroke-opacity=".2" style="animation:borderP 4s ease-in-out infinite"/>
+
+<!-- HEADER -->
+<rect width="1200" height="52" fill="#060F1C"/>
+<line x1="0" y1="52" x2="1200" y2="52" stroke="#D4AF37" stroke-width=".5" stroke-opacity=".25"/>
+<text x="600" y="22" text-anchor="middle" fill="#D4AF37" font-size="11" font-family="ui-monospace,monospace" letter-spacing="2">SYSTEM ARCHITECTURE</text>
+<text x="600" y="40" text-anchor="middle" fill="#475569" font-size="10" font-family="ui-monospace,monospace">Data Lake → Scientific Core → FastAPI Engine → Next.js Console</text>
+
+<!-- COLUMN BACKGROUNDS -->
+<rect x="12" y="62" width="272" height="466" rx="6" fill="url(#col1grad)" stroke="#6B21A8" stroke-width=".8" stroke-opacity=".3"/>
+<rect x="296" y="62" width="272" height="466" rx="6" fill="url(#col2grad)" stroke="#0E7490" stroke-width=".8" stroke-opacity=".3"/>
+<rect x="580" y="62" width="272" height="466" rx="6" fill="url(#col3grad)" stroke="#065F46" stroke-width=".8" stroke-opacity=".3"/>
+<rect x="864" y="62" width="272" height="466" rx="6" fill="url(#col4grad)" stroke="#92400E" stroke-width=".8" stroke-opacity=".3"/>
+
+<!-- COLUMN HEADERS -->
+<text x="148" y="84" text-anchor="middle" fill="#C084FC" font-size="10" font-family="ui-monospace,monospace" letter-spacing="2" style="animation:colHeader 3s ease-in-out infinite">① DATA LAKE</text>
+<text x="432" y="84" text-anchor="middle" fill="#A5F3FC" font-size="10" font-family="ui-monospace,monospace" letter-spacing="2" style="animation:colHeader 3s ease-in-out infinite .5s">② SCIENTIFIC CORE</text>
+<text x="716" y="84" text-anchor="middle" fill="#34D399" font-size="10" font-family="ui-monospace,monospace" letter-spacing="2" style="animation:colHeader 3s ease-in-out infinite 1s">③ FASTAPI ENGINE</text>
+<text x="1000" y="84" text-anchor="middle" fill="#FB923C" font-size="10" font-family="ui-monospace,monospace" letter-spacing="2" style="animation:colHeader 3s ease-in-out infinite 1.5s">④ NEXT.JS CONSOLE</text>
+
+<!-- ===== COL 1: DATA LAKE ===== -->
+<!-- KOI parquet -->
+<rect x="24" y="96" width="248" height="38" rx="5" fill="#0D0A1A" stroke="#C084FC" stroke-width=".8" stroke-opacity=".5" style="animation:cardIn .4s .3s ease-out forwards;opacity:0"/>
+<text x="38" y="112" fill="#C084FC" font-size="10" font-family="ui-monospace,monospace" font-weight="700">koi_cumulative.parquet</text>
+<text x="38" y="126" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">8,054 rows · 154 cols · NASA Exoplanet Archive</text>
+
+<!-- PS parquet -->
+<rect x="24" y="142" width="248" height="38" rx="5" fill="#0D0A1A" stroke="#C084FC" stroke-width=".8" stroke-opacity=".4" style="animation:cardIn .4s .45s ease-out forwards;opacity:0"/>
+<text x="38" y="158" fill="#C084FC" font-size="10" font-family="ui-monospace,monospace" font-weight="700">ps_confirmed_default.parquet</text>
+<text x="38" y="172" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">4,296 rows · 415 cols · Confirmed Planets</text>
+
+<!-- TOI parquet -->
+<rect x="24" y="188" width="248" height="38" rx="5" fill="#0D0A1A" stroke="#C084FC" stroke-width=".8" stroke-opacity=".35" style="animation:cardIn .4s .6s ease-out forwards;opacity:0"/>
+<text x="38" y="204" fill="#C084FC" font-size="10" font-family="ui-monospace,monospace" font-weight="700">toi_catalog.parquet</text>
+<text x="38" y="218" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">2,377 rows · 55 cols · TESS Objects of Interest</text>
+
+<!-- Divider -->
+<line x1="24" y1="236" x2="272" y2="236" stroke="#2D1B69" stroke-width="1"/>
+
+<!-- SQLite -->
+<rect x="24" y="244" width="248" height="38" rx="5" fill="#0D0A1A" stroke="#818CF8" stroke-width=".8" stroke-opacity=".5" style="animation:cardIn .4s .75s ease-out forwards;opacity:0"/>
+<text x="38" y="260" fill="#818CF8" font-size="10" font-family="ui-monospace,monospace" font-weight="700">triage.sqlite3</text>
+<text x="38" y="274" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">Analyst verdicts · session state</text>
+
+<!-- Settings YAML -->
+<rect x="24" y="290" width="248" height="38" rx="5" fill="#0D0A1A" stroke="#818CF8" stroke-width=".6" stroke-opacity=".3" style="animation:cardIn .4s .9s ease-out forwards;opacity:0"/>
+<text x="38" y="306" fill="#818CF8" font-size="10" font-family="ui-monospace,monospace">config/settings.yaml</text>
+<text x="38" y="320" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">Feature flags · model paths</text>
+
+<!-- Total row -->
+<rect x="24" y="338" width="248" height="30" rx="5" fill="#1A0A2E" style="animation:cardIn .4s 1.05s ease-out forwards;opacity:0"/>
+<text x="148" y="358" text-anchor="middle" fill="#D4AF37" font-size="12" font-family="ui-monospace,monospace" font-weight="700">14,727 total rows</text>
+
+<!-- ===== COL 2: SCIENTIFIC CORE ===== -->
+<!-- Project A box -->
+<rect x="308" y="96" width="248" height="90" rx="5" fill="#070F1C" stroke="#0E7490" stroke-width=".8" stroke-opacity=".5" style="animation:cardIn .4s .4s ease-out forwards;opacity:0"/>
+<rect x="308" y="96" width="248" height="22" rx="5" fill="#0E3A5C" opacity=".5"/>
+<text x="432" y="112" text-anchor="middle" fill="#A5F3FC" font-size="10" font-family="ui-monospace,monospace" font-weight="700">PROJECT A · Sky Change</text>
+<text x="316" y="134" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ SPHEREx 102-channel SED synth</text>
+<text x="316" y="149" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ Anomaly detection · NEOWISE</text>
+<text x="316" y="164" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ Variability · Spectral typing</text>
+<text x="316" y="179" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ Injection-recovery pipeline</text>
+
+<!-- Project B1 box -->
+<rect x="308" y="196" width="248" height="90" rx="5" fill="#070F1C" stroke="#0E7490" stroke-width=".8" stroke-opacity=".4" style="animation:cardIn .4s .6s ease-out forwards;opacity:0"/>
+<rect x="308" y="196" width="248" height="22" rx="5" fill="#0E3A5C" opacity=".4"/>
+<text x="432" y="212" text-anchor="middle" fill="#67E8F9" font-size="10" font-family="ui-monospace,monospace" font-weight="700">PROJECT B1 · Physics</text>
+<text x="316" y="234" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ Monte Carlo HZ evaluator</text>
+<text x="316" y="249" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ Chen-Kipping mass forecaster</text>
+<text x="316" y="264" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ Composition · Priority scoring</text>
+<text x="316" y="279" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ Mandel-Agol transit curves</text>
+
+<!-- Project B2 box -->
+<rect x="308" y="296" width="248" height="90" rx="5" fill="#070F1C" stroke="#0E7490" stroke-width=".8" stroke-opacity=".35" style="animation:cardIn .4s .8s ease-out forwards;opacity:0"/>
+<rect x="308" y="296" width="248" height="22" rx="5" fill="#0E3A5C" opacity=".3"/>
+<text x="432" y="312" text-anchor="middle" fill="#38BDF8" font-size="10" font-family="ui-monospace,monospace" font-weight="700">PROJECT B2 · ML Vetting</text>
+<text x="316" y="334" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ LightGBM · ROC-AUC 0.977</text>
+<text x="316" y="349" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ TreeSHAP waterfall explain</text>
+<text x="316" y="364" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ TESS fine-tune · v4 checkpoint</text>
+<text x="316" y="379" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ Centroid tripwire · leak-free</text>
+
+<!-- ===== COL 3: FASTAPI ENGINE ===== -->
+<rect x="592" y="96" width="248" height="22" rx="5" fill="#064E3B" opacity=".5" style="animation:cardIn .4s .5s ease-out forwards;opacity:0"/>
+<text x="716" y="112" text-anchor="middle" fill="#34D399" font-size="10" font-family="ui-monospace,monospace" font-weight="700">FastAPI · port 8000</text>
+
+<!-- Endpoints list -->
+<g style="animation:cardIn .4s .65s ease-out forwards;opacity:0">
+  <rect x="592" y="124" width="248" height="238" rx="5" fill="#070F1C" stroke="#065F46" stroke-width=".8" stroke-opacity=".5"/>
+  <text x="600" y="142" fill="#34D399" font-size="9" font-family="ui-monospace,monospace">GET  /health · /model/info</text>
+  <text x="600" y="158" fill="#34D399" font-size="9" font-family="ui-monospace,monospace">GET  /targets · /targets/{id}</text>
+  <text x="600" y="174" fill="#34D399" font-size="9" font-family="ui-monospace,monospace">GET  /targets/featured</text>
+  <text x="600" y="190" fill="#34D399" font-size="9" font-family="ui-monospace,monospace">GET  /shap/{id}</text>
+  <text x="600" y="206" fill="#34D399" font-size="9" font-family="ui-monospace,monospace">GET  /physics/{id}</text>
+  <text x="600" y="222" fill="#FB923C" font-size="9" font-family="ui-monospace,monospace">POST /triage/{id}/verdict</text>
+  <text x="600" y="238" fill="#FB923C" font-size="9" font-family="ui-monospace,monospace">POST /batch/scan</text>
+  <text x="600" y="254" fill="#C084FC" font-size="9" font-family="ui-monospace,monospace">GET  /batch/stream/{id} [SSE]</text>
+  <text x="600" y="270" fill="#34D399" font-size="9" font-family="ui-monospace,monospace">GET  /batch/{id}</text>
+  <line x1="600" y1="280" x2="832" y2="280" stroke="#1E293B" stroke-width="1"/>
+  <text x="600" y="296" fill="#818CF8" font-size="9" font-family="ui-monospace,monospace">POST /auth/signup · /auth/login</text>
+  <text x="600" y="312" fill="#818CF8" font-size="9" font-family="ui-monospace,monospace">GET  /auth/me · /auth/logout</text>
+  <text x="600" y="328" fill="#818CF8" font-size="9" font-family="ui-monospace,monospace">GET  /auth/oauth/{prov}/start</text>
+  <text x="600" y="344" fill="#818CF8" font-size="9" font-family="ui-monospace,monospace">GET  /auth/oauth/{prov}/callback</text>
+  <text x="600" y="354" fill="#475569" font-size="8" font-family="ui-monospace,monospace">─────────────────────────────</text>
+</g>
+
+<!-- Auth service box -->
+<rect x="592" y="368" width="248" height="38" rx="5" fill="#0A1628" stroke="#818CF8" stroke-width=".6" stroke-opacity=".4" style="animation:cardIn .4s .9s ease-out forwards;opacity:0"/>
+<text x="716" y="384" text-anchor="middle" fill="#818CF8" font-size="9" font-family="ui-monospace,monospace">scrypt · HMAC-SHA256 · OAuth2 PKCE</text>
+<text x="716" y="398" text-anchor="middle" fill="#334155" font-size="8" font-family="ui-monospace,monospace">Google · GitHub · Microsoft</text>
+
+<!-- ===== COL 4: NEXT.JS CONSOLE ===== -->
+<rect x="876" y="96" width="248" height="22" rx="5" fill="#422006" opacity=".6" style="animation:cardIn .4s .6s ease-out forwards;opacity:0"/>
+<text x="1000" y="112" text-anchor="middle" fill="#FB923C" font-size="10" font-family="ui-monospace,monospace" font-weight="700">Next.js 15 · port 3000</text>
+
+<g style="animation:cardIn .4s .75s ease-out forwards;opacity:0">
+  <rect x="876" y="124" width="248" height="150" rx="5" fill="#070F1C" stroke="#92400E" stroke-width=".8" stroke-opacity=".4"/>
+  <text x="884" y="142" fill="#FB923C" font-size="9" font-family="ui-monospace,monospace">Pages (App Router)</text>
+  <text x="884" y="158" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ / · Landing &amp; starfield</text>
+  <text x="884" y="174" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ /pipelines · Mission control</text>
+  <text x="884" y="190" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ /shap · Explainability view</text>
+  <text x="884" y="206" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ /settings · Theme toggle</text>
+  <text x="884" y="222" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ /login · OAuth2 flow</text>
+  <text x="884" y="238" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ /about · /citations</text>
+  <text x="884" y="254" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ /privacy · /terms · /contact</text>
+  <text x="884" y="262" fill="#475569" font-size="8" font-family="ui-monospace,monospace">──────────────────────────</text>
+</g>
+
+<g style="animation:cardIn .4s 1s ease-out forwards;opacity:0">
+  <rect x="876" y="280" width="248" height="90" rx="5" fill="#070F1C" stroke="#92400E" stroke-width=".6" stroke-opacity=".3"/>
+  <text x="884" y="298" fill="#FB923C" font-size="9" font-family="ui-monospace,monospace">Key Components</text>
+  <text x="884" y="314" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ CosmicStarfield · AladinSkyMap</text>
+  <text x="884" y="330" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ CatalogExplorer · ShapWaterfall</text>
+  <text x="884" y="346" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ BatchScanModal · PlotlyChart</text>
+  <text x="884" y="362" fill="#64748B" font-size="9" font-family="ui-monospace,monospace">▸ TriagePanel · TelemetryHeader</text>
+</g>
+
+<!-- Tech stack -->
+<g style="animation:cardIn .4s 1.2s ease-out forwards;opacity:0">
+  <rect x="876" y="378" width="248" height="28" rx="5" fill="#0A1220"/>
+  <text x="884" y="390" fill="#94A3B8" font-size="8" font-family="ui-monospace,monospace">React 19 · Tailwind 3.4 · D3 7.9</text>
+  <text x="884" y="402" fill="#94A3B8" font-size="8" font-family="ui-monospace,monospace">Plotly.js · Lucide-React</text>
+</g>
+
+<!-- FLOWING ARROWS between columns -->
+<!-- Col 1 → Col 2 -->
+<line x1="284" y1="220" x2="306" y2="220" stroke="#C084FC" stroke-width="1.5" stroke-dasharray="6 4" style="animation:flowDash 1s linear infinite">
+  <animate attributeName="stroke-opacity" values=".2;.8;.2" dur="2s" repeatCount="indefinite"/>
+</line>
+<polygon points="302,217 308,220 302,223" fill="#C084FC" opacity=".7"/>
+
+<!-- Col 2 → Col 3 -->
+<line x1="558" y1="220" x2="580" y2="220" stroke="#A5F3FC" stroke-width="1.5" stroke-dasharray="6 4" style="animation:flowDash 1s linear infinite .3s">
+  <animate attributeName="stroke-opacity" values=".2;.8;.2" dur="2s" repeatCount="indefinite" begin=".5s"/>
+</line>
+<polygon points="576,217 582,220 576,223" fill="#A5F3FC" opacity=".7"/>
+
+<!-- Col 3 → Col 4 -->
+<line x1="842" y1="220" x2="864" y2="220" stroke="#34D399" stroke-width="1.5" stroke-dasharray="6 4" style="animation:flowDash 1s linear infinite .6s">
+  <animate attributeName="stroke-opacity" values=".2;.8;.2" dur="2s" repeatCount="indefinite" begin="1s"/>
+</line>
+<polygon points="860,217 866,220 860,223" fill="#34D399" opacity=".7"/>
+
+<!-- Moving data packets -->
+<circle r="4" fill="#C084FC" opacity=".8">
+  <animate attributeName="opacity" values="0;.9;.9;0" dur="2.5s" repeatCount="indefinite"/>
+  <animateMotion dur="2.5s" repeatCount="indefinite">
+    <mpath xlink:href="#path12"/>
+  </animateMotion>
+</circle>
+<path id="path12" d="M 285,220 L 305,220" fill="none"/>
+
+<circle r="4" fill="#A5F3FC" opacity=".8">
+  <animate attributeName="opacity" values="0;.9;.9;0" dur="2.5s" repeatCount="indefinite" begin="1s"/>
+  <animateMotion dur="2.5s" repeatCount="indefinite" begin="1s">
+    <mpath xlink:href="#path23"/>
+  </animateMotion>
+</circle>
+<path id="path23" d="M 559,220 L 579,220" fill="none"/>
+
+<circle r="4" fill="#34D399" opacity=".8">
+  <animate attributeName="opacity" values="0;.9;.9;0" dur="2.5s" repeatCount="indefinite" begin="2s"/>
+  <animateMotion dur="2.5s" repeatCount="indefinite" begin="2s">
+    <mpath xlink:href="#path34"/>
+  </animateMotion>
+</circle>
+<path id="path34" d="M 843,220 L 863,220" fill="none"/>
+
+<!-- FOOTER -->
+<rect x="0" y="528" width="1200" height="32" fill="#040A14"/>
+<line x1="0" y1="528" x2="1200" y2="528" stroke="#1E293B" stroke-width="1"/>
+<text x="600" y="548" text-anchor="middle" fill="#334155" font-size="10" font-family="ui-monospace,monospace" letter-spacing="2">15/15 BACKEND TESTS · 10/10 ASTRO PIPELINE TESTS · PYTHON 3.10+ · NODE.JS 18+</text>
+
+<!-- CORNERS -->
+<path d="M2,2 L38,2 L38,4 L4,4 L4,38 L2,38Z" fill="#D4AF37" opacity=".4"/>
+<path d="M1198,2 L1162,2 L1162,4 L1196,4 L1196,38 L1198,38Z" fill="#D4AF37" opacity=".4"/>
+<path d="M2,558 L38,558 L38,556 L4,556 L4,522 L2,522Z" fill="#D4AF37" opacity=".4"/>
+<path d="M1198,558 L1162,558 L1162,556 L1196,556 L1196,522 L1198,522Z" fill="#D4AF37" opacity=".4"/>
+</svg>

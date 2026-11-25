@@ -24,7 +24,33 @@
 
 ## 🚀 Featured Projects
 
-> Turbofan digital twin · real-time orbital safety · satellite imagery AI · road-safety for 7 nations · smart-city command centers · multimodal IP defense.
+> Exoplanet vetting & habitability AI · turbofan digital twin · real-time orbital safety · satellite imagery AI · road-safety for 7 nations · smart-city command centers · multimodal IP defense.
+
+<br/>
+
+### 🔭 ASTRÆA — Citadel Observatory
+
+<img src="./assets/card-astraea.svg" alt="ASTRÆA Citadel Observatory" width="100%"/>
+
+A full-stack astrophysics and explainable-AI mission control platform for **exoplanet candidate vetting**, **habitability & composition modeling**, and **SPHEREx-style 102-channel sky-change anomaly detection** across **14,727 real NASA/TESS catalog targets**.
+
+<img src="./assets/arch-astraea.svg" alt="ASTRÆA architecture" width="100%"/>
+
+- 🪐 **AI Vetting (`B2`):** leak-free 8-feature **LightGBM** classifier (**0.977** KOI ROC-AUC · **0.952** TESS v4 fine-tuned ROC-AUC) with exact **TreeSHAP** per-target waterfall explanations
+- 🌡️ **Habitability Physics (`B1`):** Monte Carlo uncertainty propagation through the **Chen–Kipping** mass–radius forecaster and **Kopparapu** habitable zone boundaries
+- 🔭 **Sky Change Explorer (`Project A`):** 102-channel spectrophotometric SED synthesizer (`0.75–5.00 µm`), Mandel–Agol transit synthesis, centroid tripwire, and anomaly ranking
+- ⚡ **Streaming & Auth:** FastAPI backend with 250-row async **SSE** batch scanning, SQLite triage persistence, `scrypt` + HMAC-SHA256 bearer tokens, and Google/GitHub/Microsoft **OAuth2 PKCE**
+- 🎨 **Observatory Console:** **Next.js 15 / React 19** UI with interactive **D3.js** & **Plotly.js** charts, Aladin sky maps, custom WebGL/Canvas starfield, and 4 dynamic themes (`URJA`, `JUNGO`, `DARK`, `LIGHT`)
+
+```
+Backend  : Python · FastAPI · SSE Streaming · SQLite · OAuth2 PKCE
+ML       : LightGBM · TreeSHAP · scikit-learn · Cross-Mission Fine-Tuning
+Physics  : Monte Carlo HZ · Chen-Kipping Forecaster · Mandel-Agol Transits · SPHEREx 102-ch
+Data     : NASA Exoplanet Archive (KOI, PS) · TESS (TOI) · Parquet (14,727 rows)
+Frontend : Next.js 15 · React 19 · TypeScript · TailwindCSS · D3.js · Plotly.js
+```
+
+[![Repo](https://img.shields.io/badge/Repo-astraea--citadel--observatory-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/astraea-citadel-observatory)
 
 <br/>
 
@@ -166,6 +192,16 @@ A multimodal intellectual-property defense registry for the **AI for Bharat** ha
 ## 🌌 Tech Constellation
 
 <img src="./assets/tech-orbit.svg" alt="Tech stack orbit" width="100%"/>
+
+### 🛠️ Skills & Stack
+
+| Domain | Technologies |
+|---|---|
+| **AI / ML & Explainability** | `LightGBM` · `XGBoost` · `CatBoost` · `PyTorch` · `scikit-learn` · `TreeSHAP` · `FAISS` · `CLIP` · `Isolation Forest` |
+| **Scientific & Physics Computing** | `NumPy` · `SciPy` · `Monte Carlo Simulation` · `Extended Kalman Filter` · `RK4 + J2` · `Parquet` |
+| **Backend & Auth** | `Python` · `FastAPI` · `SSE Streaming` · `Node.js` · `Express` · `Socket.IO` · `SQLite` · `Supabase` · `OAuth2 PKCE` |
+| **Frontend & Data Viz** | `Next.js 15` · `React 19` · `TypeScript` · `TailwindCSS` · `D3.js` · `Plotly.js` · `Streamlit` · `Leaflet` |
+| **Systems, Mobile & Infra** | `C++20 (AVX2 / pybind11 / WASM)` · `Kotlin (Jetpack Compose)` · `Flutter` · `Docker` · `AWS` |
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
