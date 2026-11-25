@@ -24,7 +24,32 @@
 
 ## 🚀 Featured Projects
 
-> Exoplanet vetting & habitability AI · turbofan digital twin · real-time orbital safety · satellite imagery AI · road-safety for 7 nations · smart-city command centers · multimodal IP defense.
+> Lunar AI habitat scoring · exoplanet vetting & habitability AI · turbofan digital twin · real-time orbital safety · satellite imagery AI · road-safety for 7 nations · smart-city command centers · multimodal IP defense.
+
+<br/>
+
+### 🌕 LUNARIS — Lunar Lava Tube Subsurface Habitat & Stability Mapper
+
+[![Repo](https://img.shields.io/badge/Repo-LUNARIS-181717?style=for-the-badge&logo=github)](https://github.com/yajatkataria08-a11y/LUNARIS)
+
+A **peer-reviewed planetary AI system** that identifies, ranks, and architecturally models the best candidate lunar lava tube skylights for long-duration human habitation — focused on the **Marius Hills Hole** (Oceanus Procellarum, 14.08°N, 303.20°E).
+
+Integrates ISRO Chandrayaan-2 multi-sensor data (OHRC, DFSAR, TMC-2, ChaSTE) through a 5-stage ML pipeline to produce a calibrated **Lunar Habitat Index (LHI)** score per candidate site.
+
+- 🛰️ **Multi-Sensor Fusion:** OHRC 25cm orthophotos, DFSAR 24cm L-Band quad-pol SAR (m-chi decomposition, double-bounce), TMC-2 DTM terrain, ChaSTE subsurface thermal profiles
+- 🧠 **Attention U-Net + Stacking Ensemble:** Semantic skylight segmentation → feature extraction → XGBoost / LightGBM / RandomForest Ridge meta-learner for final LHI scoring
+- 🔬 **Physics Inversion:** DFSAR polarimetric scattering matrix inversion, ChaSTE thermal stability (–20°C target), Mohr–Coulomb geomechanical Factor of Safety, MMD domain adaptation
+- 🎯 **SHAP Explainability:** Game-theoretic Shapley attribution per site — deconstructs every remote-sensing observation contributing to the habitat score
+- 🌐 **Full-Stack Observatory UI:** Next.js 15 / React 19 mission control with live 3D Chandrayaan-2 orbit visualization (Three.js), interactive SHAP HUD, candidate leaderboard, subsurface cross-section viewer, 4 dynamic themes (URJA ☀️, DARK 🌑, LIGHT ☁️, JUNGO 🌿)
+- ✅ **43/43 pytest passing** · TypeScript strict · Render-deployed FastAPI backend
+
+```
+Backend  : Python · FastAPI · uvicorn · SQLite
+ML       : Attention U-Net · XGBoost · LightGBM · RandomForest · Ridge · TreeSHAP
+Physics  : DFSAR m-chi · ChaSTE thermal · Mohr-Coulomb FoS · MMD Domain Adaptation
+Data     : ISRO Chandrayaan-2 (OHRC / DFSAR / TMC-2 / ChaSTE) · NASA LROC/LOLA 2K albedo
+Frontend : Next.js 15 · React 19 · TypeScript · TailwindCSS · Three.js · D3.js · Plotly.js
+```
 
 <br/>
 
@@ -197,11 +222,12 @@ A multimodal intellectual-property defense registry for the **AI for Bharat** ha
 
 | Domain | Technologies |
 |---|---|
-| **AI / ML & Explainability** | `LightGBM` · `XGBoost` · `CatBoost` · `PyTorch` · `scikit-learn` · `TreeSHAP` · `FAISS` · `CLIP` · `Isolation Forest` |
-| **Scientific & Physics Computing** | `NumPy` · `SciPy` · `Monte Carlo Simulation` · `Extended Kalman Filter` · `RK4 + J2` · `Parquet` |
-| **Backend & Auth** | `Python` · `FastAPI` · `SSE Streaming` · `Node.js` · `Express` · `Socket.IO` · `SQLite` · `Supabase` · `OAuth2 PKCE` |
-| **Frontend & Data Viz** | `Next.js 15` · `React 19` · `TypeScript` · `TailwindCSS` · `D3.js` · `Plotly.js` · `Streamlit` · `Leaflet` |
-| **Systems, Mobile & Infra** | `C++20 (AVX2 / pybind11 / WASM)` · `Kotlin (Jetpack Compose)` · `Flutter` · `Docker` · `AWS` |
+| **Planetary & Space AI** | `Attention U-Net` · `SAR Polarimetry (DFSAR m-chi)` · `Thermal Inversion (ChaSTE)` · `MMD Domain Adaptation` · `Lunar Photometry (Lommel-Seeliger)` · `Three.js 3D Orbit` |
+| **AI / ML & Explainability** | `LightGBM` · `XGBoost` · `CatBoost` · `PyTorch` · `scikit-learn` · `TreeSHAP` · `FAISS` · `CLIP` · `Isolation Forest` · `BiLSTM` · `DINOv2` |
+| **Scientific & Physics Computing** | `NumPy` · `SciPy` · `OpenCV` · `Monte Carlo Simulation` · `Extended Kalman Filter` · `RK4 + J2` · `Mohr-Coulomb FoS` · `Parquet` |
+| **Backend & Auth** | `Python` · `FastAPI` · `SSE Streaming` · `Node.js` · `Express` · `Socket.IO` · `SQLite` · `Supabase` · `OAuth2 PKCE` · `scrypt + HMAC-SHA256` |
+| **Frontend & Data Viz** | `Next.js 15` · `React 19` · `TypeScript` · `TailwindCSS` · `Three.js` · `D3.js` · `Plotly.js` · `Streamlit` · `Leaflet` |
+| **Systems, Mobile & Infra** | `C++20 (AVX2 / pybind11 / WASM)` · `Kotlin (Jetpack Compose)` · `Flutter` · `Docker` · `AWS` · `Render` · `Railway` |
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
@@ -240,7 +266,8 @@ A multimodal intellectual-property defense registry for the **AI for Bharat** ha
 
 | | Focus | Topics |
 |---|---|---|
-| 🧠 | **Advanced Deep Learning** | Transformers, ViT, Diffusion Models |
+| 🌕 | **Planetary AI & Remote Sensing** | SAR polarimetry, lunar photometry, geomechanical FoS |
+| 🧠 | **Advanced Deep Learning** | Transformers, ViT, Diffusion Models, Attention U-Net |
 | ⚙️ | **System Design** | Scalable ML pipelines & microservices |
 | 🔐 | **Cloud Security** | AWS IAM, VPCs, Security Groups |
 | 🏎️ | **Competitive Programming** | Codeforces Div 2/3 |
@@ -248,7 +275,7 @@ A multimodal intellectual-property defense registry for the **AI for Bharat** ha
 
 ## 🤝 Open To
 
-🤝 **Hackathon collabs** (AI/ML, systems) · 💼 **Internships** (AI/ML, full-stack, backend) · 🔬 **Research** (computer vision, NLP, multimodal) · 🌟 **Open source** (Python, ML tooling, FastAPI)
+🤝 **Hackathon collabs** (AI/ML, systems, space-tech) · 💼 **Internships** (AI/ML, full-stack, backend) · 🔬 **Research** (computer vision, NLP, multimodal, planetary AI) · 🌟 **Open source** (Python, ML tooling, FastAPI)
 
 ## 📫 Let's Connect
 
